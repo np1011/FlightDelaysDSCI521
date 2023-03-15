@@ -80,7 +80,7 @@ First, reviewed correlations between existing Kaggle dataset weather data and fl
 
 Once the dataset was updated we took a variety of approaches to predicting flight delays with the updated dataset. We attempted both a self-written Naive Bayes model as well as a variety of models from sklearn (Logistic Regression, Decision Tree, Gradient Boosting, Random Forest, Random Forest and Extra Trees Classifiers). We selected our models to test based on researching other projects that had attempted both weather and flight prediction.
 
-#### **Requirements**
+### **REQUIREMENTS**
 
 **Pre-requisites**<br> 
 import pandas as pd<br> 
@@ -92,7 +92,7 @@ import seaborn as sns<br>
 **Store the classifier models to save time**<br> 
 import joblib<br> 
 
-**Sklearn**
+**Sklearn**<br> 
 from sklearn.preprocessing import LabelEncoder<br> 
 from sklearn.model_selection import train_test_split<br> 
 from sklearn.preprocessing import MinMaxScaler<br> 
