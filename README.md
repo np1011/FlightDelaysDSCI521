@@ -75,15 +75,12 @@ WT category - these are true/false so 1 indicates this weather event was present
 ## Stakeholders, Use and Intentions
 
 ## Analytic Approach
-#### **Phase 1**
-Reviewed correlations between existing Kaggle dataset weather data and flight delays. Found that we were missing many potentially important weather data points. Added those weather data points back into dataset before proceeding further. 
 
-### **Phase 2**
-Take a variety of approaches to predicting flight delays with the updated dataset. We attempted both a self-written Naive Bayes model as well as a variety of models from sklearn (Logistic Regression, Decision Tree, Gradient Boosting, Random Forest, Random Forest and Extra Trees Classifiers). We selected our models to test based on researching other projects that had attempted both weather and flight prediction.
+First, reviewed correlations between existing Kaggle dataset weather data and flight delays. Found that we were missing many potentially important weather data points. Added those weather data points back into dataset before proceeding further. 
 
-### SKLEARN Classifiers
+Once the dataset was updated we took a variety of approaches to predicting flight delays with the updated dataset. We attempted both a self-written Naive Bayes model as well as a variety of models from sklearn (Logistic Regression, Decision Tree, Gradient Boosting, Random Forest, Random Forest and Extra Trees Classifiers). We selected our models to test based on researching other projects that had attempted both weather and flight prediction.
 
-#### Set up Environment
+#### **Requirements**
 
 **Pre-requisites**<br> 
 import pandas as pd<br> 
