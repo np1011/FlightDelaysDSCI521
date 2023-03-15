@@ -83,6 +83,7 @@ Once the dataset was updated we took a variety of approaches to predicting fligh
 ### **REQUIREMENTS**
 
 **Pre-requisites**<br> 
+import os<br>
 import pandas as pd<br> 
 import numpy as np<br> 
 import matplotlib<br> 
