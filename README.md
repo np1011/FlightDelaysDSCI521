@@ -83,18 +83,18 @@ Take a variety of approaches to predicting flight delays with the updated datase
 
 ### SKLEARN Classifiers
 
-#### Environment Setup : Install the following
-# Pre-requisites
+#### Set up Environment
+**Pre-requisites**
 import pandas as pd
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Store the classifier models to save time
+**Store the classifier models to save time**
 import joblib
 
-# Sklearn
+**Sklearn**
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
@@ -104,7 +104,7 @@ from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import ExtraTreesClassifier
 
-# Performance metrics
+**Performance metrics**
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import f1_score
 from sklearn.metrics import precision_score
