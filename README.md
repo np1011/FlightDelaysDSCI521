@@ -86,13 +86,9 @@ Take a variety of approaches to predicting flight delays with the updated datase
 #### Set up Environment
 **Pre-requisites**
 import pandas as pd
-
 import numpy as np
-
 import matplotlib
-
 import matplotlib.pyplot as plt
-
 import seaborn as sns
 
 **Store the classifier models to save time**
