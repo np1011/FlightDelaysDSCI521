@@ -7,6 +7,9 @@ Our project focuses on using an existing dataset that combines historical flight
 
 Flight delays, for our purposes, are defined as departure delays of over 15 minutes. The [dataset used](https://www.kaggle.com/datasets/threnjen/2019-airline-delays-and-cancellations?select=train_sets_documentation.txt) covers US flights in 2019 and gathers its data from the Bureau of Transportation Statistics (BTS) and the National Centers for Environmental Information (NOAA).
 
+When scoping our project we hoped to use flight and weather information to predict weather events and flight delays in order to better understand the relationship between weather and flight delays. We anticipated that we would see the effect of severe weather events on flights. We thought there would be variation in weather and delays by airport, because of different weather conditions in different regions. We predicted that the project would allow us to use weather prediction in order to predict flight delays.
+
+As it turned out, the relationship between weather and flight delays was not as strong as we expected. Rather, a variety of non-weather related factors combine with weather to predict flight delays. In line with our expectations, weather had varying impacts dependent on airport location. When this finding became apparent we focused our project on getting accurate flight delay predictions using all the data available to us in our chosen dataset, rather then focusing primarily on weather and/or weather prediction.
 
 ## Team Members
 
@@ -72,6 +75,46 @@ WT category - these are true/false so 1 indicates this weather event was present
 ## Stakeholders, Use and Intentions
 
 ## Analytic Approach
+#### **Phase 1**
+Reviewed correlations between existing Kaggle dataset weather data and flight delays. Found that we were missing many potentially important weather data points. Added those weather data points back into dataset before proceeding further. 
+
+### **Phase 2**
+Take a variety of approaches to predicting flight delays with the updated dataset. We attempted both a self-written Naive Bayes model as well as a variety of models from sklearn (Logistic Regression, Decision Tree, Gradient Boosting, Random Forest, Random Forest and Extra Trees Classifiers). We selected our models to test based on researching other projects that had attempted both weather and flight prediction.
+
+### SKLEARN Classifiers
+
+#### Environment Setup : Install the following
+# Pre-requisites
+import pandas as pd
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Store the classifier models to save time
+import joblib
+
+# Sklearn
+from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import ExtraTreesClassifier
+
+# Performance metrics
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import f1_score
+from sklearn.metrics import precision_score
+from sklearn.metrics import recall_score
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import plot_confusion_matrix
+from sklearn.metrics import roc_curve
+from sklearn.metrics import roc_auc_score
+from scipy.stats import pointbiserialr
 
 ## Findings/Results
 
