@@ -120,9 +120,9 @@ from scipy.stats import pointbiserialr<br>
 
 ### **CLASSIFICATION ATTEMPTS**
 
-### ***SKLEARN CLASSIFICATIONS***
+### ***I. SKLEARN CLASSIFICATIONS***
 
-### ***NAIVE BAYES***
+### ***II. NAIVE BAYES***
 
 
 ## Findings/Results
