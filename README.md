@@ -85,24 +85,24 @@ Take a variety of approaches to predicting flight delays with the updated datase
 
 #### Set up Environment
 **Pre-requisites**
-import pandas as pd
-import numpy as np
-import matplotlib
-import matplotlib.pyplot as plt
-import seaborn as sns
+import pandas as pd<br> 
+import numpy as np<br> 
+import matplotlib<br> 
+import matplotlib.pyplot as plt<br> 
+import seaborn as sns<br> 
 
 **Store the classifier models to save time**
-import joblib
+import joblib<br> 
 
 **Sklearn**
-from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.linear_model import LogisticRegression
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import GradientBoostingClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.ensemble import ExtraTreesClassifier
+from sklearn.preprocessing import LabelEncoder<br> 
+from sklearn.model_selection import train_test_split<br> 
+from sklearn.preprocessing import MinMaxScaler<br> 
+from sklearn.linear_model import LogisticRegression<br> 
+from sklearn.tree import DecisionTreeClassifier<br> 
+from sklearn.ensemble import GradientBoostingClassifier<br> 
+from sklearn.ensemble import RandomForestClassifier<br> 
+from sklearn.ensemble import ExtraTreesClassifier<br> 
 
 **Performance metrics**
 from sklearn.metrics import accuracy_score
