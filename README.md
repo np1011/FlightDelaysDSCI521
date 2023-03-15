@@ -84,14 +84,15 @@ Take a variety of approaches to predicting flight delays with the updated datase
 ### SKLEARN Classifiers
 
 #### Set up Environment
-**Pre-requisites**
+
+**Pre-requisites**<br> 
 import pandas as pd<br> 
 import numpy as np<br> 
 import matplotlib<br> 
 import matplotlib.pyplot as plt<br> 
 import seaborn as sns<br> 
 
-**Store the classifier models to save time**
+**Store the classifier models to save time**<br> 
 import joblib<br> 
 
 **Sklearn**
@@ -104,17 +105,18 @@ from sklearn.ensemble import GradientBoostingClassifier<br>
 from sklearn.ensemble import RandomForestClassifier<br> 
 from sklearn.ensemble import ExtraTreesClassifier<br> 
 
-**Performance metrics**
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import f1_score
-from sklearn.metrics import precision_score
-from sklearn.metrics import recall_score
-from sklearn.metrics import classification_report
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import plot_confusion_matrix
-from sklearn.metrics import roc_curve
-from sklearn.metrics import roc_auc_score
-from scipy.stats import pointbiserialr
+**Performance metrics**<br> 
+from sklearn.metrics import accuracy_score<br> 
+from sklearn.metrics import f1_score<br> 
+from sklearn.metrics import precision_score<br> 
+from sklearn.metrics import recall_score<br> 
+from sklearn.metrics import classification_report<br> 
+from sklearn.metrics import confusion_matrix<br> 
+from sklearn.metrics import plot_confusion_matrix<br> 
+from sklearn.metrics import roc_curve<br> 
+from sklearn.metrics import roc_auc_score<br> 
+from scipy.stats import pointbiserialr<br> 
+
 
 ## Findings/Results
 
