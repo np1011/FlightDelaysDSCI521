@@ -148,13 +148,21 @@ The same process, with the same code base, was repeated for All US flights, LaGu
 Source documentation and additional detail can be found in Classification_AllUSFlights.ipynb, Classification-LaGuardia.ipynb and Classification-Douglas.ipynb.
 
 ### ***II. NAIVE BAYES***
-
+!! EDIT ME !!
 
 ## Findings/Results
 !!EDIT ME!!
+- Weather data was not successful at predicting flight delays. Non-weather factors had the highest correlation with delays. See BTS data given in Classification_AllUSFlights - extreme weather events are not a cause of most delays. Most delays are a mix of weather and the handling of that weather by airports, carriers etc.
+- Different airports experienced different weather impacts (LaGuardia vs Douglas).
+- Predicting at the airport level was more successful than all US
+- Tree-based models performed the best. Could improvements be made in the handling of categorical vs continuous data in order to make other models work? Would additional data pre-processing help?
+- 
 
 ## Challenges and Limitations
 !!EDIT ME!!
 - Variable nature of delays made it challenging to predict delays at a national level. We did not seek to add additional features to our dataset, it is possible we could better predict national delays with more data points (such as whether the incoming flight was delayed or whether or not there was an incoming flight).
-- 
+- We are loooking at only 1 year of data. In a given year weather may be more or less extreme. Maybe we are missing that in some years weather is a more important factor.
+- Not all flights originate in the US. Likely there are relationships with factors being ignored in our US-only data.
+- Other projects had very high accuracy by using incoming flight delay as a feature. Is this a useful data point in making long term predictions? We only know that the prior flight is delayed shortly before the flight in question is set to take off. How can we use other data points to improve accuracy?
+- We did not attempt all potential methods of data-preprocessing or model adjustment. There are many ways to improve upon model accuracy. Future use of he dataset could explore additional modifications. Would those improve results? For example, adding additional trees to our models had a slight positive effect on the accuracy, but it caused the All US model to be overly burdensome to run and difficult to repeat. What methods could be used to improve upon that?
 
