@@ -166,3 +166,11 @@ Source documentation and additional detail can be found in Classification_AllUSF
 - Other projects had very high accuracy by using incoming flight delay as a feature. Is this a useful data point in making long term predictions? We only know that the prior flight is delayed shortly before the flight in question is set to take off. How can we use other data points to improve accuracy?
 - We did not attempt all potential methods of data-preprocessing or model adjustment. There are many ways to improve upon model accuracy. Future use of he dataset could explore additional modifications. Would those improve results? For example, adding additional trees to our models had a slight positive effect on the accuracy, but it caused the All US model to be overly burdensome to run and difficult to repeat. What methods could be used to improve upon that?
 
+## Reference Articles
+- https://www.bts.gov/topics/airlines-and-airports/understanding-reporting-causes-flight-delays-and-cancellations
+- https://www.scalestatistics.com/point-biserial.html
+- https://medium.com/analytics-vidhya/tree-based-machine-learning-algorithms-explained-b50937d3cf8e
+- https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5
+- https://medium.com/analytics-vidhya/predicting-flight-delays-with-machine-learning-3d24dbf62f0b
+- https://github.com/nive927/Flight_Delay_Prediction
+- https://www.daclarins.com/python-analyses/predicting-the-weather
