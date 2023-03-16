@@ -11,11 +11,20 @@ When scoping our project we hoped to use flight and weather information to predi
 
 As it turned out, the relationship between weather and flight delays was not as strong as we expected. Rather, a variety of non-weather related factors combine with weather to predict flight delays. In line with our expectations, weather had varying impacts dependent on airport location. When this finding became apparent we focused our project on getting accurate flight delay predictions using all the data available to us in our chosen dataset, rather then focusing primarily on weather and/or weather prediction.
 
-## Team Members
+### **Code Files**
+***GitHub**
+- Exploratory_Data_Analysis.ipynb : exploration of data available in the dataset
+- Classification_AllUSFlights.ipynb : 5 sklearn models attempt to classify flight delay based on weather data alone & weather plus other flight data for all US airports in 2019
+- Classification-Douglas.ipynb : 5 sklearn models to classify flight delay based on weather data alone & weather plus other flight data for Douglas Municipal airport in 2019
+- Classification-LaGuardia.ipynb : 5 sklearn models to classify flight delay based on weather data alone & weather plus other flight data for LaGuardia airport in 2019
+- Flight_data_NaiveBayes.ipynb : Naive Bayes model to classify flight delay based on weather and other flight data for all US airports in 2019 
 
+## Team Members
+!!EDIT ME!!
 
 ## Data Used
-Dataset obtained from Kaggle : https://www.kaggle.com/datasets/threnjen/2019-airline-delays-and-cancellations?select=train_sets_documentation.txt
+Original dataset obtained from Kaggle : https://www.kaggle.com/datasets/threnjen/2019-airline-delays-and-cancellations?select=train_sets_documentation.txt
+Modified dataset uploaded to Kaggle : !!EDIT ME!! Add link to Kaggle
 
 Dataset contains information on flights occurring in 2019, with statistics on flight delay, carrier and airport information and weather data.
 
@@ -74,6 +83,8 @@ WT category - these are true/false so 1 indicates this weather event was present
 
 ## Stakeholders, Use and Intentions
 
+!!EDIT ME!! Analysis would be interesting both to the aviation industry itself, in order to understand factors influencing delay as well as those effected by flight delays (travelers, travel industry stakeholders). We intended to help reveal how weather predicts flight delays, but ultimately found non-weather events are very important for flight delays. We cannot control the weather but we might be able to control some of these other factors. For example, plane age has a very high correlation with flight delay. Could mechanical issues with old planes be causing delays? How can this be avoided?
+
 ## Analytic Approach
 
 First, reviewed correlations between existing Kaggle dataset weather data and flight delays. Found that we were missing many potentially important weather data points. Added those weather data points back into dataset before proceeding further. 
@@ -116,8 +127,16 @@ from sklearn.metrics import roc_auc_score<br>
 from scipy.stats import pointbiserialr<br> 
 
 ### **EXPLORATORY DATA ANALYSIS**
+First explores all data points in the dataset then looks for major patterns (most delayed carriers, most delayed airports). Then, drills down into data for the two airports we choose to focus on - LaGuardia and Douglas Municipal - to understand how they contribute to overall system delays and how weather in each location differs.
+
+See full detail in Exploratory_Data_Analysis.ipynb
 
 ### **FEATURE SELECTION** 
+Feature selection was performed for each grouping of data (All US Flights, LaGuardia and Douglas Municipal). In order to understand and select our features we did the following. Details can be found in Classification_AllUSFlights.ipynb, Classification-LaGuardia.ipynb and Classification-Douglas.ipynb.
+
+1. Observe percentage of delayed vs. non-delayed flights for DEP_DEL15. Delays of over 15 minutes are represented by 1, no delay or delay of under 15 minutes is represented by 0.
+2. Observe correlations between continuous and categorical data and DEP_DEL15 using Point Biserial Correlation and Spearman Coefficient, respectively. Weather data was classified as continuous and other flight data (i.e. carrier name, airport, departure time block) are categorical. 
+3. Run Feature Importance Ranking using Random Forest Classifier and remove insignificant features from analysis. This aligns with features that have low correlations with DEP_DEL15. 
 
 ### **CLASSIFICATION ATTEMPTS**
 
@@ -127,6 +146,10 @@ from scipy.stats import pointbiserialr<br>
 
 
 ## Findings/Results
+!!EDIT ME!!
 
 ## Challenges and Limitations
+!!EDIT ME!!
+- Variable nature of delays made it challenging to predict delays at a national level. We did not seek to add additional features to our dataset, it is possible we could better predict national delays with more data points (such as whether the incoming flight was delayed or whether or not there was an incoming flight).
+- 
 
