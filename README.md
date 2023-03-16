@@ -11,7 +11,7 @@ When scoping our project we hoped to use flight and weather information to predi
 
 As it turned out, the relationship between weather and flight delays was not as strong as we expected. Rather, a variety of non-weather related factors combine with weather to predict flight delays. In line with our expectations, weather had varying impacts dependent on airport location. When this finding became apparent we focused our project on getting accurate flight delay predictions using all the data available to us in our chosen dataset, rather then focusing primarily on weather and/or weather prediction.
 
-### **Code Files**
+### **Files**
 ***GitHub***
 - Exploratory_Data_Analysis.ipynb : exploration of data available in the dataset
 - Classification_AllUSFlights.ipynb : 5 sklearn models attempt to classify flight delay based on weather data alone & weather plus other flight data for all US airports in 2019
@@ -20,6 +20,9 @@ As it turned out, the relationship between weather and flight delays was not as 
 - Flight_data_NaiveBayes.ipynb : Naive Bayes model to classify flight delay based on weather and other flight data for all US airports in 2019 
 - data_dictionary.ipynb
 - README
+
+***Kaggle***
+!!EDIT ME!! Add link to final dataset on Kaggle
 
 ## Team Members
 !!EDIT ME!!
