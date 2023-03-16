@@ -1,4 +1,4 @@
-## Prediction of Airline Delays due to local weather
+## Prediction of Airline Delays for US Airports in 2019
 ## _DSCI521: Group 7, Winter 2023_
 
 ## Project Overview
@@ -136,11 +136,16 @@ Feature selection was performed for each grouping of data (All US Flights, LaGua
 
 1. Observe percentage of delayed vs. non-delayed flights for DEP_DEL15. Delays of over 15 minutes are represented by 1, no delay or delay of under 15 minutes is represented by 0.
 2. Observe correlations between continuous and categorical data and DEP_DEL15 using Point Biserial Correlation and Spearman Coefficient, respectively. Weather data was classified as continuous and other flight data (i.e. carrier name, airport, departure time block) are categorical. 
-3. Run Feature Importance Ranking using Random Forest Classifier and remove insignificant features from analysis. This aligns with features that have low correlations with DEP_DEL15. 
+3. Run Feature Importance Ranking using Random Forest Classifier and remove insignificant features from analysis. This aligns with features that have low correlations with DEP_DEL15. Different features were removed for each varition of our modeling attempts.
 
 ### **CLASSIFICATION ATTEMPTS**
 
 ### ***I. SKLEARN CLASSIFICATIONS***
+We decided to use Sklearn for these classifications so that we could easily attempt multiple classification models on the same data in a timely manner. Based on our research of other projects, we decided to use Logistic Regression, Decision Tree, Gradient Boosting, Random Forest and Extra Trees. After running all the classifiers we used ROC AUC analysis to analyze performance of different classifiers. For each grouping of data (All Us, LaGuardia, Douglas) we compared using weather data only to using all available data points (weather and historical flight data) to better understand the significance of weather data for prediction.
+
+The same process, with the same code base, was repeated for All US flights, LaGuardia and Douglas Municipal in order to compare and contrast classification results.
+
+Source documentation and additional detail can be found in Classification_AllUSFlights.ipynb, Classification-LaGuardia.ipynb and Classification-Douglas.ipynb.
 
 ### ***II. NAIVE BAYES***
 
