@@ -18,6 +18,8 @@ As it turned out, the relationship between weather and flight delays was not as 
 - Classification-Douglas.ipynb : 5 sklearn models to classify flight delay based on weather data alone & weather plus other flight data for Douglas Municipal airport in 2019
 - Classification-LaGuardia.ipynb : 5 sklearn models to classify flight delay based on weather data alone & weather plus other flight data for LaGuardia airport in 2019
 - Flight_data_NaiveBayes.ipynb : Naive Bayes model to classify flight delay based on weather and other flight data for all US airports in 2019 
+- data_dictionary.ipynb
+- README
 
 ## Team Members
 !!EDIT ME!!
