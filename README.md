@@ -32,7 +32,7 @@ Combining these two kinds of weather delays, the BTS estimates that in 2019 (the
 ## Team Members
 Caitlin Dunne</br>
 Arjun Naik</br>
-Daniel MacCauley</br>
+Daniel Macaulay</br>
 Nicole Padilla</br> 
 
 ## Data Used
