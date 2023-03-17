@@ -11,6 +11,12 @@ When scoping our project we hoped to use flight and weather information to predi
 
 As it turned out, the relationship between weather and flight delays was not as strong as we expected. Rather, a variety of non-weather related factors combine with weather to predict flight delays. In line with our expectations, weather had varying impacts dependent on airport location. When this finding became apparent we focused our project on getting accurate flight delay predictions using all the data available to us in our chosen dataset, rather then focusing primarily on weather and/or weather prediction.
 
+Reading up on the underlying causes of flight delays from the Bureau of Transportation gives us some insight.
+
+There are 2 kinds of weather delays. 1 - Extreme Weather (weather so severe it prevents flying). 2 - National Air System related weather delays. NAS delays slow down flight operations but do not prevent flying. These types of delays, according to the BTS, can be improved upon by action from the carriers or Federal Aviation Administration. They are combined with other types of delays in the BTS data, but it is possible to estimate which percentage of these delays are likely caused by weather.
+
+Combining these two kinds of weather delays, the BTS estimates that in 2019 (the year that our data was pulled from) 38.7% of flights had a weather related cause. We also know that some airlines and airports might be better equipped to ameliorate the effects of these delays. This means we need to include additional features to improve our results.
+
 ### **Files**
 ***GitHub***
 - Exploratory_Data_Analysis.ipynb : exploration of data available in the dataset
@@ -21,15 +27,18 @@ As it turned out, the relationship between weather and flight delays was not as 
 - data_dictionary.ipynb
 - README
 
-***Kaggle***
-!!EDIT ME!! Add link to final dataset on Kaggle
+
 
 ## Team Members
-!!EDIT ME!!
+Caitlin Dunne</br>
+Arjun Naik</br>
+Daniel MacCauley</br>
+Nicole Padilla</br> 
 
 ## Data Used
 Original dataset obtained from Kaggle : https://www.kaggle.com/datasets/threnjen/2019-airline-delays-and-cancellations?select=train_sets_documentation.txt </br>
-Modified dataset uploaded to Kaggle : !!EDIT ME!! Add link to Kaggle
+
+Modified Dataset on Kaggle : https://www.kaggle.com/datasets/caitlindunne/dsci-521-group7-modded-raw-data-files </br>
 
 Dataset contains information on flights occurring in 2019, with statistics on flight delay, carrier and airport information and weather data.
 
