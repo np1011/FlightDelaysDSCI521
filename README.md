@@ -167,7 +167,12 @@ The same process, with the same code base, was repeated for All US flights, LaGu
 Source documentation and additional detail can be found in Classification_AllUSFlights.ipynb, Classification-LaGuardia.ipynb and Classification-Douglas.ipynb.
 
 ### ***II. NAIVE BAYES***
-!! EDIT ME !!
+-Naïve Bayes: We decided to implement a naïve bayes model to try determine whether any of the continuous variables could be used to predict flight delays.
+-We selected 19 out of 41 available features that contain continuous data.
+-We then trained a custom-built naïve bayes model on each of our selected feature sets and tried to see if the trained model could accurately predict flight delays from -flight data from a test set.
+-In addition to accuracy data, we also collect other F1 metrics including precision, recall and f1-scores.
+
+
 
 ## Findings/Results
 
@@ -175,6 +180,8 @@ Source documentation and additional detail can be found in Classification_AllUSF
 - Different airports experienced different weather impacts (LaGuardia vs Douglas).
 - Predicting at the airport level was more successful than all US
 - Tree-based models performed the best. Could improvements be made in the handling of categorical vs continuous data in order to make other models work? Would additional data pre-processing help?
+-The Naïve bayes classifier did not show a sufficiently strong relationship between the weather events and flight delays. It also did not show a strong relationship between non-weather factors and flight delays.
+-Of the features tested with the model,  Average monthly passengers per airline and average wind at airport, seemed to show the strongest correlation to flight delays. However, f-scores for all features sets were low.
 
 
 ## Challenges and Limitations
