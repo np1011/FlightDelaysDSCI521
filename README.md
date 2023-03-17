@@ -97,7 +97,12 @@ WT category - these are true/false so 1 indicates this weather event was present
 
 ## Stakeholders, Use and Intentions
 
-!!EDIT ME!! Analysis would be interesting both to the aviation industry itself, in order to understand factors influencing delay as well as those effected by flight delays (travelers, travel industry stakeholders). We intended to help reveal how weather predicts flight delays, but ultimately found non-weather events are very important for flight delays. We cannot control the weather but we might be able to control some of these other factors. For example, plane age has a very high correlation with flight delay. Could mechanical issues with old planes be causing delays? How can this be avoided?
+Our analysis would be interesting both to the aviation industry itself, in order to understand factors influencing delay as well as those effected by flight delays (travelers, travel industry stakeholders). We intended to help reveal how weather predicts flight delays, but ultimately found non-weather events are very important for flight delays. 
+
+**Aviation Industry** (Carriers, Airports, FAA): The weather is not in our control, but non-weather factors can be improved in order to reduce delays. We see in our analysis that non-weather factors (such as plane age) interact with the weather in order to predict delays. Improvements could be made to the controllable factors in order to reduce delays.</br>
+**Travelers**: Travelers would be interested in our analysis in order to understand factors likely to influence the potential for delay. If their plane is coming in from LaGuarida, for example, they should be more concerned about a delay than if it is coming in from Douglas.</br>
+**Travel Industry**: Understanding the conditions that influence delays can help travel industry stakeholders improve their business. For example, a tourism company that picks up travelers from the airport can allow for more time for pick up when a flight has a higher likelihood of delay.</br>
+
 
 ## Analytic Approach
 
@@ -165,15 +170,15 @@ Source documentation and additional detail can be found in Classification_AllUSF
 !! EDIT ME !!
 
 ## Findings/Results
-!!EDIT ME!!
+
 - Weather data was not successful at predicting flight delays. Non-weather factors had the highest correlation with delays. See BTS data given in Classification_AllUSFlights - extreme weather events are not a cause of most delays. Most delays are a mix of weather and the handling of that weather by airports, carriers etc.
 - Different airports experienced different weather impacts (LaGuardia vs Douglas).
 - Predicting at the airport level was more successful than all US
 - Tree-based models performed the best. Could improvements be made in the handling of categorical vs continuous data in order to make other models work? Would additional data pre-processing help?
-- 
+
 
 ## Challenges and Limitations
-!!EDIT ME!!
+
 - Variable nature of delays made it challenging to predict delays at a national level. We did not seek to add additional features to our dataset, it is possible we could better predict national delays with more data points (such as whether the incoming flight was delayed or whether or not there was an incoming flight).
 - We are loooking at only 1 year of data. In a given year weather may be more or less extreme. Maybe we are missing that in some years weather is a more important factor.
 - Not all flights originate in the US. Likely there are relationships with factors being ignored in our US-only data.
