@@ -186,6 +186,9 @@ Source documentation and additional detail can be found in Classification_AllUSF
 
 
 ## Challenges and Limitations
+-Weather alone didn’t predict delays well, meaning that predicting the weather would not accurately predict a flight delay. Extreme weather events (that stop all flights) causes only 4% of flight delays and is not as significant of a factor as we anticipated. 
+Air traffic congestion, Air Carrier Delay (6.57% of all flight delays
+Weather delays only – (0.73% of all flight delays) [Source Bureau of Transportation][https://www.bts.gov/topics/airlines-and-airports/understanding-reporting-causes-flight-delays-and-cancellations] [Source](https://www.travelmarketreport.com/News/articles/What-Are-the-Most-Common-Reasons-For-Flight-Delays-in-the-US)
 
 - Variable nature of delays made it challenging to predict delays at a national level. We did not seek to add additional features to our dataset, it is possible we could better predict national delays with more data points (such as whether the incoming flight was delayed or whether or not there was an incoming flight).
 - We are loooking at only 1 year of data. In a given year weather may be more or less extreme. Maybe we are missing that in some years weather is a more important factor.
