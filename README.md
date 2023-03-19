@@ -186,7 +186,7 @@ Source documentation and additional detail can be found in Classification_AllUSF
 
 
 ## Challenges and Limitations
--Weather alone didn’t predict delays well, meaning that predicting the weather would not accurately predict a flight delay. Extreme weather events (that stop all flights) causes only 4% of flight delays and is not as significant of a factor as we anticipated. 
+- Weather alone didn’t predict delays well, meaning that predicting the weather would not accurately predict a flight delay. Extreme weather events (that stop all flights) causes only 4% of flight delays and is not as significant of a factor as we anticipated. 
 Air traffic congestion, Air Carrier Delay (6.57% of all flight delays
 Weather delays only – (0.73% of all flight delays) [Source Bureau of Transportation](https://www.bts.gov/topics/airlines-and-airports/understanding-reporting-causes-flight-delays-and-cancellations) [Source](https://www.travelmarketreport.com/News/articles/What-Are-the-Most-Common-Reasons-For-Flight-Delays-in-the-US)
 
